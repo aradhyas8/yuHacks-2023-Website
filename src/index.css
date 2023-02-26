@@ -1,0 +1,38 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@font-face {
+  font-family: "NDOT 47";
+  src: url('./assets/ndot-47-inspired-by-nothing.ttf') format('truetype');
+}
+
+/* Typography */
+p {
+  font-family: 'Inconsolata', monospace;
+  color: rgba(0,0,0,0.65);
+  /* font-size: 14px; */
+}
+
+h1, h2, h3 {
+  font-family: "NDOT 47", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h4 {
+  font-family: "Inconsolata", monospace;
+  font-size: 1em;
+  color: rgba(0,0,0,0.35);
+}
+
+.Red {
+  color: #C95656;
+}
+
+/* Utilities */
+html {
+  height: 100%;
+  margin: 0;
+}

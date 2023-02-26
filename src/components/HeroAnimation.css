@@ -1,0 +1,16 @@
+.AnimationContainer {
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.3);
+  display: flex;
+}
+.AnimationContainer p {
+  position: absolute;
+}
+
+.Circle {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.08);
+  margin: 0.1em
+}

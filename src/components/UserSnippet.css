@@ -1,0 +1,24 @@
+.UserSnippetContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.Username {
+  font-family: "NDOT 47", monospace;
+  color: rgba(0,0,0,0.3);
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+.Username:hover {
+  text-decoration: underline;
+}
+
+.UserProfile {
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 1em;
+  border: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}
