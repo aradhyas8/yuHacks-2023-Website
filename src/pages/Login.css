@@ -2,7 +2,6 @@
   height: calc(100vh - 6em);
   padding-left: 1.5em;
   padding-right: 1.5em;
-  /* max-width: 960px; */
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useRef, useState } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import './Cursor.css';
 
 interface CursorProps {
@@ -8,23 +8,26 @@ interface CursorProps {
 const Cursor: FunctionComponent<CursorProps> = () => {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(
     () => {
-      window.addEventListener("mousedown", (e) => {
-        if(ref.current) {
-          ref.current.style.left = e.pageX + "px";
-          ref.current.style.right = e.pageY + "px";
-        }
-      })
-    }, []
+      document.addEventListener('mousemove', (e) => {
+        setMouseX(e.pageX);
+        setMouseY(e.pageY);
+        // console.log("mouseX: " + e.clientX, ", mouseY: " + e.clientY);
+      });
+      // document.addEventListener('')
+    }, [mouseX, mouseY]
   )
 
   return (  
-    <div className="Cursor" >
-      V
-    </div>
+    <div 
+      className="Cursor"
+      style={{
+        top: mouseY,
+        left: mouseX,
+      }}
+    ></div>
   );
 }
  

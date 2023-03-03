@@ -62,7 +62,8 @@ const HeroAnimation: FunctionComponent<HeroAnimationProps> = () => {
       <div className="Circle" /> */}
       {
         board.map((e) => {
-          return <div className="Circle" />
+          // return <div className="Circle" />
+          return <div><p>p</p></div>
         })
       }
     </div>

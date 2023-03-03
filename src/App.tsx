@@ -13,6 +13,7 @@ function App() {
 
   return(
     <div className="AppContainer">
+      <Cursor />
       <NavBar />
       <BrowserRouter>
         <Routes>
@@ -20,7 +21,7 @@ function App() {
           <Route path="/login" element={LoginPage} />
         </Routes>
       </BrowserRouter>
-      {/* <Cursor /> */}
+      
     </div>
     
   )

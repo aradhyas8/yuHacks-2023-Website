@@ -3,8 +3,11 @@
   height: 2em;
   width: 2em;
   border-radius: 1em;
-  color: rgba(0,0,0,0.3);
-  z-index: 999;
-  left: 0;
-  top: 0;
+  background-color: rgba(0,0,0,0.35);
+  /* z-index: 999; */
+  transform: translate(-50%, -50%);
+  /* transition: 0.1s; */
+  /* transition-timing-function:  */
+  mix-blend-mode: difference;
+  pointer-events: none;
 }
