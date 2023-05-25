@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import HeroAnimation from "../components/HeroAnimation_old.component";
 import './Login.css';
 
 interface LoginProps {

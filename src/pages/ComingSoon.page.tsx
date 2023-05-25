@@ -1,18 +1,21 @@
-import { Grid } from "@mui/material";
 import React from "react";
 
 import "./ComingSoon.css";
-import yuHacksLogo from '../assets/yuhacks-logo.png';
-// import HeroAnimation from "../components/HeroAnimation.component";
-import HeroAnimation from "../components/HeroAnimation_old.component";
-
+import cardBack from "../assets/Card-Back.png";
+import cardFront from "../assets/Card-Front.png";
+// import yuHacksLogo from '../assets/yuhacks-logo.png';
 
 function ComingSoon() {
   return (
     <div className={"ComingSoonContainer"}>
       <div className={"HeroArtContainer"}>
-        <div className="HeroAnimation">
-          
+        <div className="HeroAnimation" >
+          <div className="HeroCardContainer" id="back">
+            <img src={cardBack} alt="Hacker ID Card Back" />
+          </div>
+          <div className="HeroCardContainer" id="front">
+            <img src={cardFront} alt="Hacker ID Card Front" />
+          </div>
         </div>
       </div>
       <div className={"HeroTextContainer"}>
@@ -26,9 +29,12 @@ function ComingSoon() {
             <span className="Highlight">Code</span>
           </h1>
           <h4>York University | September 2023</h4>
-          <p>Mailing List coming soon...</p>
+          <div className="MailingListInput">
+            <span>Mailing list coming soon...</span>
+          </div>
         </div>
       </div>
+      {/* <span className={"HeroDecorText"}>create | connect | code</span> */}
     </div>
   );
 }
