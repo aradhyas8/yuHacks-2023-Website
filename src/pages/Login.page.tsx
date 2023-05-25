@@ -8,8 +8,8 @@ interface LoginProps {
 const Login: FunctionComponent<LoginProps> = () => {
   return (  
     <div className="LoginContainer">
-      <h1>Hacker Portal</h1>
-      <p>Under construction...</p>
+      <h1 style={{color: "#ffffff"}}>Hacker Portal</h1>
+      <p>Hacker portal coming soon...</p>
     </div>
   );
 }

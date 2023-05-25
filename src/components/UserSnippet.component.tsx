@@ -8,7 +8,8 @@ interface UserSnippetProps {
 const UserSnippet: FunctionComponent<UserSnippetProps> = () => {
   return ( 
     <div className="UserSnippetContainer">
-      <a className="Username" href="/login">LOGIN</a>
+      <a className="Username" href="/login">Dashboard</a>
+      {/* <a className="Username" onClick={()=>window.alert("Dashboard coming soon")}>LOGIN</a> */}
       <div className="UserProfile">
         {/* TODO - Add user picture */}
       </div>

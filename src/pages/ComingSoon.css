@@ -103,7 +103,7 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-columns:  1fr, 1fr; */
     padding: 0 2em;
-    height: calc(100vh - 6em);
+    height: calc(100vh - 6em - 3.5em);
   }
   .HeroTextContainer {
     margin-left: 1em;
