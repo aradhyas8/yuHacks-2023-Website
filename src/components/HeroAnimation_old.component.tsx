@@ -15,6 +15,8 @@ const HeroAnimation: FunctionComponent<HeroAnimationProps> = () => {
   const [col, setCol] = useState(10);
   const [row, setRow] = useState(10);
 
+  const TIMEOUT = 100;
+
   // let col = 0; let row = 0;
   // let board: Array<number> = [];
 
@@ -42,15 +44,20 @@ const HeroAnimation: FunctionComponent<HeroAnimationProps> = () => {
     console.log("board size: " + board.length);
   }
 
+  const resizeHandler = () => {
+    setDimensionOnResize();
+    setTimeout(generateBoard, TIMEOUT);
+  }
+
   useEffect(
     () => {
       // on render
       setDimensionOnResize();
-      generateBoard();
+      setTimeout(generateBoard, TIMEOUT);
 
       // event listeners
       window.addEventListener("resize", setDimensionOnResize, false);  // on resize
-      window.addEventListener("resize", generateBoard, false);
+      // window.addEventListener("resize", generateBoard, false);
     }, []
   )
 
@@ -61,10 +68,10 @@ const HeroAnimation: FunctionComponent<HeroAnimationProps> = () => {
       <div className="Circle" />
       <div className="Circle" /> */}
       {
-        board.map((e) => {
-          // return <div className="Circle" />
-          return <div><p>p</p></div>
-        })
+        // board.map((e) => {
+        //   // return <div className="Circle" />
+        //   return <div><p>p</p></div>
+        // })
       }
     </div>
   );

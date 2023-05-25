@@ -41,6 +41,12 @@
 /* Typography */
 .HeroTitle {
   font-size: 3em;
+  font-weight: 800;
+  color: rgba(0,0,0,0.75)
+}
+
+h4 {
+  color: rgba(255,255,255,0.55);
 }
 
 /* Responsive grid */

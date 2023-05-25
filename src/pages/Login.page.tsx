@@ -9,8 +9,8 @@ interface LoginProps {
 const Login: FunctionComponent<LoginProps> = () => {
   return (  
     <div className="LoginContainer">
-      <h1>Login</h1>
-      <HeroAnimation />
+      <h1>Hacker Portal</h1>
+      <p>Under construction...</p>
     </div>
   );
 }

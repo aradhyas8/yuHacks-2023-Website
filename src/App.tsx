@@ -12,7 +12,7 @@ function App() {
   const LoginPage = <Login />
 
   return(
-    <div className="AppContainer">
+    <div className="AppContainer" style={{backgroundColor: "#CC5A5A"}}>
       <Cursor />
       <NavBar />
       <BrowserRouter>
