@@ -40,6 +40,6 @@ html {
 }
 
 /* hide cursor excpet on links and textboxs */
-html *:not(a, a *) {
-  /* cursor: none; */
+html *:not(a, a *, input) {
+  cursor: none;
 }
