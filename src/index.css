@@ -1,5 +1,5 @@
 /** Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@800,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 @font-face {
   font-family: "NDOT 47";
   src: url('./assets/ndot-47-inspired-by-nothing.ttf') format('truetype');
