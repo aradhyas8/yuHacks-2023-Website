@@ -9,7 +9,7 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
   return (
     <div className={"NavBarContainer"}>
       <div className="NavBarLogo">
-        <a className="LogoText" href="/">
+        <a className="LogoText" href="/yuHacks-2023-Website/">
           <span className="LogoHighlight">yuHacks</span>
           (
           <span className="LogoSubHighlight">2023</span>
