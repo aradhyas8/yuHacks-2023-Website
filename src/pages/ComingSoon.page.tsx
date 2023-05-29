@@ -3,7 +3,6 @@ import React from "react";
 import "./ComingSoon.css";
 import cardBack from "../assets/Card-Back.png";
 import cardFront from "../assets/Card-Front.png";
-// import yuHacksLogo from '../assets/yuhacks-logo.png';
 
 function ComingSoon() {
   return (
@@ -19,9 +18,6 @@ function ComingSoon() {
         </div>
       </div>
       <div className={"HeroTextContainer"}>
-        {/* <div className="HeroLogo">
-          <img src={yuHacksLogo} alt="yuHacks Logo"/>
-        </div> */}
         <div>
           <h1 className="HeroTitle">
             <span>Create, </span><br />
@@ -30,8 +26,9 @@ function ComingSoon() {
           </h1>
           <h4>York University | September 2023</h4>
           <div className="MailingListInput">
-            <span>Mailing list coming soon...</span>
+            <span>Mailing list opening soon...</span>
           </div>
+          <p className="SponsorContactTitle">Interested in sponsoring? <a title={"Email yuHacks Team"} href={"mailto:info@yuhacks.ca"}>Contact us</a> today!</p>
         </div>
       </div>
       {/* <span className={"HeroDecorText"}>create | connect | code</span> */}

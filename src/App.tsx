@@ -14,7 +14,7 @@ function App() {
 
   return(
     <div className="AppContainer" style={{backgroundColor: "#CC5A5A"}}>
-      <Cursor />
+      {/* <Cursor /> */}
       <NavBar />
       <BrowserRouter>
         <Routes>
