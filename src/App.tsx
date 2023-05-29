@@ -18,8 +18,8 @@ function App() {
       <NavBar />
       <BrowserRouter>
         <Routes>
-          <Route path="/yuHacks-2023-Website/" element={HomePage} />
-          <Route path="/yuHacks-2023-Website/login" element={LoginPage} />
+          <Route path="/" element={HomePage} />
+          <Route path="/login" element={LoginPage} />
         </Routes>
       </BrowserRouter>
       <Footer />
